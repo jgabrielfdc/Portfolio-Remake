@@ -7,8 +7,8 @@
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
-    <link rel="stylesheet" href="animations.css">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/css/animations.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
@@ -92,9 +92,14 @@
              </p>   
         </div>
     </section>
-    <script src="bookmarkScroll.js"></script>
-    <script src="scrollSpy.js"></script>
-    <script src="menuToggle.js"></script>
-    <script src="cardBuilder.js"></script>
+    <script>
+    let files=['bookmarkScroll','menuToggle','cardBuilder'];
+
+    for(file of files){
+        let scripts=document.createElement('script');
+        scripts.src="assets/js/"+file+".js";
+        document.getElementsByTagName("body")[0].append(scripts);
+    }
+    </script>
 </body>
 </html>
