@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - João Gabriel</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header class="navbar__container">
+        <div class="navbar__content">
+            <div class="button__container">
+                <button class="material-icons" onclick="menuToggle()">menu</button>
+            </div>
+            <ul id="navbar__items" style="width:0px">
+                <li><a href="#intro" onclick="redirect(event)">Inicio</a></li>
+                <li><a href="#apresentacao" onclick="redirect(event)">Apresentação</a></li>
+                <li><a href="#competencias" onclick="redirect(event)">Competencias</a></li>
+                <li><a href="#projetos" onclick="redirect(event)">Projetos</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section id="intro" class="intro__container">
+        <div class="intro__content">
+            <div class="intro__header">
+                <div class="header__content">
+                    <h1>João Gabriel Farias</h1>
+                    <h2>Desenvolvedor FullStack</h2>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="apresentacao" class="apresentacao__container">
+        <div class="apresentacao__content">
+             <p> 
+                Aliquam et convallis velit. Nulla facilisi. Sed vitae risus imperdiet, porta libero vel, auctor magna. Vivamus accumsan diam leo, ac placerat sem vestibulum sit amet. Pellentesque rutrum, erat at congue porta, augue quam ullamcorper nulla, sit amet convallis purus leo eget tellus. Ut sit amet augue consectetur, congue ex eget, ultricies arcu. Aliquam scelerisque vestibulum rutrum. Ut condimentum sollicitudin arcu, non porta ipsum. Quisque non turpis in massa venenatis semper quis quis odio. Quisque imperdiet magna ipsum, vel feugiat mauris pellentesque id. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin at elit gravida, blandit tortor at, consequat urna. Phasellus ac pharetra felis. Fusce tincidunt rutrum viverra.
+                Phasellus nisl dolor, commodo quis mi eu, elementum fermentum nulla. Donec sed elementum purus, semper lacinia orci. Maecenas mattis elit quis arcu luctus, sed placerat metus fermentum. Quisque massa nibh, tincidunt eu tempor quis, dictum ut ligula. Sed at odio vel elit vestibulum consequat eu eget mi. Pellentesque elementum iaculis nisi, hendrerit vestibulum ligula imperdiet eu. Aliquam a mauris ac augue venenatis commodo. Integer viverra, tortor sit amet aliquet sodales, lacus libero tincidunt velit, non tincidunt ante ipsum quis nisl. Nullam volutpat mauris ipsum, vitae sodales neque congue quis. 
+             </p>   
+        </div>
+    </section>
+    <section id="competencias" style="background-color: #3f4a4a;" class="competencias__container">
+        <div id="competencias__items" class="competencias__content">
+            <div class="competencias__display" id="display">
+                <div class="display__content">
+                    <div class="display__header">Habilidade</div>
+                    <div class="display__description">
+                        <h4>Tempo de Experiência:</h4>
+                        <p>1 ano e 5 meses</p>
+                        <h4>Certificados:</h4>
+                        <p>
+                             <ul>
+                                <li><a href="C:\Users\suporte_fsh\Downloads\Certificado Web Completo.pdf" target="_blank">C:\Users\suporte_fsh\Downloads\Certificado Web Completo.pdf</a></li>
+                            </ul>
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="competencias__list">
+                <div class="list__header">
+                    <h4>Skills</h4>
+                </div>
+                <ul id="cards" class="cards__container">
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="projetos" style="background-color: #444;">
+
+    </section>
+    <section id="apresentacao" class="apresentacao__container">
+        <div class="apresentacao__content">
+             <p> 
+                Aliquam et convallis velit. Nulla facilisi. Sed vitae risus imperdiet, porta libero vel, auctor magna. Vivamus accumsan diam leo, ac placerat sem vestibulum sit amet. Pellentesque rutrum, erat at congue porta, augue quam ullamcorper nulla, sit amet convallis purus leo eget tellus. Ut sit amet augue consectetur, congue ex eget, ultricies arcu. Aliquam scelerisque vestibulum rutrum. Ut condimentum sollicitudin arcu, non porta ipsum. Quisque non turpis in massa venenatis semper quis quis odio. Quisque imperdiet magna ipsum, vel feugiat mauris pellentesque id. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin at elit gravida, blandit tortor at, consequat urna. Phasellus ac pharetra felis. Fusce tincidunt rutrum viverra.
+                Phasellus nisl dolor, commodo quis mi eu, elementum fermentum nulla. Donec sed elementum purus, semper lacinia orci. Maecenas mattis elit quis arcu luctus, sed placerat metus fermentum. Quisque massa nibh, tincidunt eu tempor quis, dictum ut ligula. Sed at odio vel elit vestibulum consequat eu eget mi. Pellentesque elementum iaculis nisi, hendrerit vestibulum ligula imperdiet eu. Aliquam a mauris ac augue venenatis commodo. Integer viverra, tortor sit amet aliquet sodales, lacus libero tincidunt velit, non tincidunt ante ipsum quis nisl. Nullam volutpat mauris ipsum, vitae sodales neque congue quis. 
+             </p>   
+        </div>
+    </section>
+    <section id="projetos" style="background-color: #444;">
+
+    </section>
+    <section id="apresentacao" class="apresentacao__container">
+        <div class="apresentacao__content">
+             <p> 
+                Aliquam et convallis velit. Nulla facilisi. Sed vitae risus imperdiet, porta libero vel, auctor magna. Vivamus accumsan diam leo, ac placerat sem vestibulum sit amet. Pellentesque rutrum, erat at congue porta, augue quam ullamcorper nulla, sit amet convallis purus leo eget tellus. Ut sit amet augue consectetur, congue ex eget, ultricies arcu. Aliquam scelerisque vestibulum rutrum. Ut condimentum sollicitudin arcu, non porta ipsum. Quisque non turpis in massa venenatis semper quis quis odio. Quisque imperdiet magna ipsum, vel feugiat mauris pellentesque id. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Proin at elit gravida, blandit tortor at, consequat urna. Phasellus ac pharetra felis. Fusce tincidunt rutrum viverra.
+                Phasellus nisl dolor, commodo quis mi eu, elementum fermentum nulla. Donec sed elementum purus, semper lacinia orci. Maecenas mattis elit quis arcu luctus, sed placerat metus fermentum. Quisque massa nibh, tincidunt eu tempor quis, dictum ut ligula. Sed at odio vel elit vestibulum consequat eu eget mi. Pellentesque elementum iaculis nisi, hendrerit vestibulum ligula imperdiet eu. Aliquam a mauris ac augue venenatis commodo. Integer viverra, tortor sit amet aliquet sodales, lacus libero tincidunt velit, non tincidunt ante ipsum quis nisl. Nullam volutpat mauris ipsum, vitae sodales neque congue quis. 
+             </p>   
+        </div>
+    </section>
+    <script src="bookmarkScroll.js"></script>
+    <script src="scrollSpy.js"></script>
+    <script src="menuToggle.js"></script>
+    <script src="cardBuilder.js"></script>
+</body>
+</html>

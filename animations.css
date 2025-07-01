@@ -1,0 +1,164 @@
+/* ------------------------------
+   Transições de Cor e Bordas
+------------------------------ */
+@keyframes transicao {
+    from {
+        background: #ff0;
+        color: #000;
+    }
+    to {
+        background: #f00;
+        color: #fff;
+    }
+}
+
+@keyframes border-in {
+    from {
+        border-radius: 0px;
+    }
+    to {
+        border-radius: 0px 0px 25px 0px;
+    }
+}
+
+/* ------------------------------
+   Animações com Gradientes
+------------------------------ */
+@keyframes magica {
+    0% {
+        background: linear-gradient(to top, #00ffff, #2f8383);
+    }
+    25% {
+        background: linear-gradient(to top, #2f8383, #2f48ea);
+    }
+    50% {
+        background: linear-gradient(to top, #2f48ea, #9531f3);
+    }
+    75% {
+        background: linear-gradient(to top, #9531f3, #f64fee);
+    }
+    100% {
+        background: linear-gradient(to top, #f64fee, #ec2424);
+    }
+}
+
+/* ------------------------------
+   Fade-in com movimento
+------------------------------ */
+@keyframes fade-in-lg {
+    0% {
+        left: 400px;
+        opacity: 0;
+    }
+    50% {
+        left: 10%;
+        opacity: 1;
+    }
+    100% {
+        left: 20%;
+    }
+}
+
+@keyframes fade-in-sm {
+    0% {
+        left: 400px;
+        opacity: 0;
+    }
+    50% {
+        left: 10%;
+        opacity: 1;
+    }
+    100% {
+        left: 30%;
+    }
+}
+
+/* ------------------------------
+   Slide In / Out
+------------------------------ */
+@keyframes slide-in {
+    from {
+        left: 100%;
+        opacity: 0;
+    }
+    to {
+        left: 0px;
+        opacity: 1;
+        transform: translate(-50%);
+    }
+}
+
+@keyframes slide-out {
+    from {
+        left: 0px;
+        opacity: 1;
+    }
+    to {
+        left: 100%;
+        opacity: 0;
+    }
+}
+
+/* ------------------------------
+   Expandir/Reduzir largura
+------------------------------ */
+@keyframes hidden {
+    from {
+        width: 120%;
+    }
+    to {
+        width: 0px;
+    }
+}
+
+@keyframes visible {
+    from {
+        width: 0px;
+    }
+    to {
+        width: 120%;
+    }
+}
+
+/* ------------------------------
+   Classes de Animação
+------------------------------ */
+.slide-in {
+    animation-name: slide-in;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    left: 50%;
+    transform: translate(-50%);
+}
+
+.slide-out {
+    animation-name: slide-out;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    left: 50%;
+}
+
+.hidden {
+    animation-name: hidden;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    overflow: hidden;
+}
+
+.visible {
+    animation-name: visible;
+    animation-duration: 0.5s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in-out;
+    overflow: hidden;
+}
+
+.border-in {
+    animation-name: border-in;
+    animation-duration: 0.3s;
+    animation-delay: 0.5s;
+    animation-fill-mode: forwards;
+}
